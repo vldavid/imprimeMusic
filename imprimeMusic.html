@@ -1,0 +1,56 @@
+<!-- 
+// Todos los numeros del 1 al 100
+// Multiplos de 3: Music
+// Multiplos de 5: TI
+// Multiplos de 3 y 5: Musical
+
+// Usar solo un if
+// No usar else, else if o ternario 
+-->
+
+<script type="text/javascript">
+	imprimeMusic();
+
+	function imprimeMusic(){
+		
+		for(var i=1; i<101; i++){
+			// console.log('i: ' + i + ' Mod3: ' + i%3 + ' Mod5: ' + i%5 + ' (i%3 + i%5) ' + (i%3 + i%5));
+
+			if((i%3 + i%5) > 0){
+				switch (i%3) {
+					case 0: document.write(i + " Music<br />");
+					break;
+				}
+				switch (i%5) {
+					case 0: document.write(i + " TI<br />");
+					break;
+				}
+			}
+			switch (i%3 + i%5) {
+				case 0: document.write(i + " Musical<br />");
+				break;
+			}
+		}
+
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
